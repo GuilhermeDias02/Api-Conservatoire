@@ -3,7 +3,7 @@
 	include("db_connect.php");
 	$request_method = $_SERVER["REQUEST_METHOD"];
 
-	function getProducts()
+	function getIdentifiants()
 	{
 		global $conn;
 		$query = "SELECT * FROM login";
@@ -22,7 +22,7 @@
 		case 'GET':
 
 			// Retrive Products
-            getProducts();
+            getIdentifiants();
 
             break;
 		default:
